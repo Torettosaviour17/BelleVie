@@ -32,9 +32,9 @@
 //   );
 // }
 
-import React from "react";
-import heroimg from "../../assets/heroimg.png";
-import component from "../../assets/componentimg.png";
+// import React from "react";
+import heroimg from "../../../public/assets/heroimg.png";
+import component from "../../../public/assets/componentimg.png";
 
 export default function HeroSection() {
   return (

@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import logo from "../../assets/BelleView.png";
+import logo from "../../../publicassets/BelleView.png";
 import { Link } from "react-router-dom";
 
 export default function navbar() {
