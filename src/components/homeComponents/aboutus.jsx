@@ -1,5 +1,5 @@
 // import React from "react";
-import aboutimg from "../../../public/assets/aboutimg.png";
+import aboutimg from "../../assets/aboutimg.png";
 
 export default function aboutus() {
   return (
@@ -9,7 +9,7 @@ export default function aboutus() {
           <img className="w-full h-auto" src={aboutimg} alt="Hero" />
         </div>
 
-        <div className="w-full md:w-1/2 flex flex-col justify-center gap-4 pr-32">
+        <div className="w-full md:w-1/2 flex flex-col justify-center gap-4 pr-28">
           <h1 className="font-bold md:text-[100px] text-transparent bg-clip-text bg-gradient-to-r from-[#484C7F] to-[#DDB6C6]">
             About Us
             <hr className="bg-[#484C7F] inline-block rounded-[20px] w-[74px] h-[10px]" />

@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import logo from "../../../publicassets/BelleView.png";
+import logo from "../../assets/BelleView.png";
 import { Link } from "react-router-dom";
 
 export default function navbar() {
@@ -26,10 +26,10 @@ export default function navbar() {
       <div>
         <ul className="gap-7 hidden md:flex">
           <li className="hover:text-[##484C7F] text-[18px] font-semibold text-[#484C7F]">
-            Home
+            <Link to="/">Home</Link>
           </li>
           <li className="hover:text-[##484C7F] text-[18px] font-semibold text-[#484C7F]">
-            Facilities
+            <a href="/facilities">Facilities</a>
           </li>
           <li className="hover:text-[##484C7F] text-[18px] font-semibold text-[#484C7F]">
             Rooms & Suites
