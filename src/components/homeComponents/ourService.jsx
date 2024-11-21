@@ -1,6 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import ourserviceimg from "../../assets/ourserviceimg.png";
+import Restaurantimg from "../../assets/Restaurantimg.png";
+import Gymnasiumimg from "../../assets/Gymnasiumimg.png";
+import aboutimg from "../../assets/aboutimg.png";
 
 export default function OurService() {
   const [activeTab, setActiveTab] = useState("Massage");
@@ -18,45 +21,45 @@ export default function OurService() {
       title: "Dine in Style",
       description:
         "Experience gourmet dining at our luxurious restaurant with a range of delicious cuisines crafted by top chefs.",
-      imgSrc: ourserviceimg,
+      imgSrc: Restaurantimg,
     },
     {
       label: "Swimming Pool",
       title: "Enjoy the Pool",
       description:
         "Dive into relaxation with our crystal clear swimming pool, open for all guests.",
-      imgSrc: ourserviceimg,
+      imgSrc: aboutimg,
     },
     {
       label: "Gymnasium",
       title: "Stay Fit",
       description:
         "Our gym is fully equipped with modern fitness equipment for a complete workout experience.",
-      imgSrc: ourserviceimg,
+      imgSrc: Gymnasiumimg,
     },
   ];
 
   const activeContent = tabs.find((tab) => tab.label === activeTab);
 
   return (
-    <div className="flex flex-col items-center font-Poppins">
+    <div className="flex flex-col  items-center font-Poppins p-7">
       {/* Title Section */}
-      <h1 className="text-[100px] font-bold text-[#49468B]">
+      <h1 className="text-[42px] sm:text-[52px] lg:text-[100px] font-bold text-[#49468B]">
         Our <span className="text-[#D49FAC]">Services</span>
         <hr className="bg-[#49468B] inline-block rounded-[20px] w-[74px] h-[10px]" />
       </h1>
 
       {/* Tabs Section */}
-      <div className="flex mt-6">
+      <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 mt-6 w-full lg:w-[69.3%]">
         {tabs.map((tab) => (
           <button
             key={tab.label}
             onClick={() => setActiveTab(tab.label)}
-            className={`px-[43px] py-2 ${
+            className={` py-2 ${
               activeTab === tab.label
                 ? "bg-[#49468B] text-white"
                 : "text-[#49468B] bg-white"
-            } font-bold text-[24px] border border-[#49468B]`}
+            } font-bold text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] border border-[#49468B]`}
           >
             {tab.label}
           </button>
@@ -71,11 +74,13 @@ export default function OurService() {
           className="w-full md:w-1/2 "
         />
         <div className="p-5 space-y-5 bg-[#49468B]">
-          <h2 className="text-[48px] font-semibold">{activeContent.title}</h2>
-          <p className="mt-2 text-[18px] font-semibold  ">
+          <h2 className="text-[24px] sm:text-[30px] md:text-[38px] lg:text-[48px] font-semibold">
+            {activeContent.title}
+          </h2>
+          <p className="mt-2 text-[14px] sm:text-[16px] md:text-[18px] font-semibold  ">
             {activeContent.description}
           </p>
-          <button className="mt-4 px-4 py-2 text-[16px] font-semibold bg-[#AC8DAF] text-white rounded-md">
+          <button className="mt-4 w-[30%] inline py-2  px] sm:text-[14px] text-[12px] md:text-[16px] font-semibold bg-[#AC8DAF] text-white rounded-md">
             READ MORE
           </button>
         </div>

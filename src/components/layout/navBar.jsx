@@ -1,10 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/BelleView.png";
-import { Link } from "react-router-dom";
 
-export default function navbar() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -25,18 +24,25 @@ export default function navbar() {
       {/* Links for Desktop */}
       <div>
         <ul className="gap-7 hidden md:flex">
-          <li className="hover:text-[##484C7F] text-[18px] font-semibold text-[#484C7F]">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="hover:text-[##484C7F] text-[18px] font-semibold text-[#484C7F]">
-            <a href="/facilities">Facilities</a>
-          </li>
-          <li className="hover:text-[##484C7F] text-[18px] font-semibold text-[#484C7F]">
-            Rooms & Suites
-          </li>
-          <li className="hover:text-[#484C7F] text-[18px] font-semibold text-[#484C7F]">
-            Contact Us
-          </li>
+          {["/", "/facilities", "/RoomsSuites", "/contactUs"].map((path, index) => {
+            const names = ["Home", "Facilities", "Rooms & Suites", "Contact Us"];
+            return (
+              <li key={index}>
+                <NavLink
+                  to={path}
+                  className={({ isActive }) =>
+                    `text-[18px] font-semibold ${
+                      isActive
+                        ? "text-[#484C7F] decoration-wavy"
+                        : "text-[#DDB6C6]"
+                    } hover:text-[#1034A6]`
+                  }
+                >
+                  {names[index]}
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
@@ -46,7 +52,7 @@ export default function navbar() {
         className="block md:hidden focus:outline-none z-50"
         onClick={toggleMenu}
       >
-        <div className=" w-6 h-6 flex flex-col items-center justify-center">
+        <div className="w-6 h-6 flex flex-col items-center justify-center">
           <span
             className={`block w-6 h-[3px] bg-black transition-transform duration-300 ${
               isOpen ? "transform rotate-45 translate-y-[3px]" : ""
@@ -71,31 +77,25 @@ export default function navbar() {
           isOpen ? "flex" : "hidden"
         } fixed inset-0 bg-white flex-col md:hidden items-center justify-center space-y-6 font-bold z-40`}
       >
-        <Link
-          to="/"
-          className="hover:text-[#B4020A] text-[16px] font-semibold text-[#1034A6]"
-        >
-          Home
-        </Link>
-
-        <Link
-          to="/AboutUs"
-          className="hover:text-[#B4020A] text-[16px] font-semibold text-[#1034A6]"
-        >
-          Facilities
-        </Link>
-        <Link
-          to="/AboutUs"
-          className="hover:text-[#B4020A] text-[16px] font-semibold text-[#1034A6]"
-        >
-          Rooms & Suites
-        </Link>
-        <Link
-          to="/AboutUs"
-          className="hover:text-[#B4020A] text-[16px] font-semibold text-[#1034A6]"
-        >
-          Contact Us
-        </Link>
+        {["/", "/facilities", "/RoomsSuites", "/contactUs"].map((path, index) => {
+          const names = ["Home", "Facilities", "Rooms & Suites", "Contact Us"];
+          return (
+            <NavLink
+              key={index}
+              to={path}
+              className={({ isActive }) =>
+                `text-[16px] font-semibold ${
+                  isActive
+                    ? "text-[#B4020A] decoration-wavy"
+                    : "text-[#1034A6]"
+                } hover:text-[#484C7F]`
+              }
+              onClick={() => setIsOpen(false)} // Close menu on click
+            >
+              {names[index]}
+            </NavLink>
+          );
+        })}
       </div>
     </nav>
   );

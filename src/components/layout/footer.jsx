@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebook, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-[#49468B] p-8 text-white">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between md:items-center space-y-8 md:space-y-0">
         {/* Left Section */}
         <div className="flex w-[50%] flex-col items-start space-y-16">
           <div className="space-y-6">

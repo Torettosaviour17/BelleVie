@@ -5,7 +5,7 @@ import component from "../../assets/componentimg.png";
 export default function HeroSection() {
   return (
     <section
-      className="flex flex-col md:flex-row items-center justify-center bg-[#DDB6C6] bg-opacity-[20%] pl-24 p-7 gap-10 pb-28"
+      className="flex flex-col md:flex-row items-center justify-center bg-[#DDB6C6] bg-opacity-[20%] md:pl-24 p-7 gap-10 pb-28"
       style={{
         backgroundImage: `url(${component})`,
         backgroundSize: "201px 422px", // Controls background image size
@@ -14,8 +14,8 @@ export default function HeroSection() {
       }}
     >
       {/* Content Area */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center gap-4">
-        <h1 className="font-bold md:text-[100px] text-[#484C7F]">
+      <div className="w-full md:w-1/2 flex flex-col  md:text-left justify-center gap-4">
+        <h1 className="font-bold text-[42px] sm:text-[52px] lg:text-[100px] text-[#484C7F]">
           Welcome
           <hr className="bg-[#AC8DAF] inline-block rounded-[20px] w-[74px] h-[10px]" />
         </h1>
