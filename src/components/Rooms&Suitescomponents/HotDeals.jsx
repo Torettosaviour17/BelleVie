@@ -1,106 +1,210 @@
+// // eslint-disable-next-line no-unused-vars
+// import React, { useState } from "react";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import Kingsutuies from "../../assets/Kingsutuies.png";
+// import SilverSUiteimg from "../../assets/silversuiteimg.png";
+// import specialimg from "../../assets/specialimg.png";
+
+// export default function HotDeals() {
+//   return (
+//     <section>
+//       <div className="flex overflow-x">
+//         {/* this is one */}
+//       <div className="w-full flex flex-col md:w-1/2">
+//         <div
+//           className="h-[351px] md:h-[472px] lg:h-[581px]  bg-cover w-full"
+//           style={{
+//             backgroundImage: `url(${Kingsutuies})`,
+//             backgroundRepeat: "no-repeat",
+//           }}
+//         >
+//           <div className="font text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-2xl font-bold inline-block bg-[#484C7F] p-4">
+//             SALE 30%
+//           </div>
+//         </div>
+//         <div className="w-full bg-[#484C7F] bg-opacity-[5%]">
+//           <div className=" p-3">
+//             <h3 className=" font-semibold text-[#AC8DAF] text-[24px] sm:text-[30px] md:text-[38px] lg:text-4xl">
+//               GOLDEN SUITE
+//             </h3>
+//             <p className="text-2xl my-2 font-bold text-[#484C7F]">
+//               5,000 <span className="text-sm font-normal">naira</span>
+//             </p>
+//             <p className="text-sm text-[#484C7FBD]">per night</p>
+//           </div>
+//         </div>
+//       </div>
+//       {/* this is two */}
+//       <div className="w-full flex flex-col md:w-1/2">
+//         <div
+//           className="h-[351px] md:h-[472px] lg:h-[581px]  bg-cover w-full"
+//           style={{
+//             backgroundImage: `url(${specialimg})`,
+//             backgroundRepeat: "no-repeat",
+//           }}
+//         >
+//           <div className="font text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-2xl font-bold inline-block bg-[#484C7F] p-4">
+//             SALE 30%
+//           </div>
+//         </div>
+//         <div className="w-full bg-[#484C7F] bg-opacity-[5%]">
+//           <div className=" p-3">
+//             <h3 className=" font-semibold text-[#AC8DAF] text-[24px] sm:text-[30px] md:text-[38px] lg:text-4xl">
+//               GOLDEN SUITE
+//             </h3>
+//             <p className="text-2xl my-2 font-bold text-[#484C7F]">
+//               5,000 <span className="text-sm font-normal">naira</span>
+//             </p>
+//             <p className="text-sm text-[#484C7FBD]">per night</p>
+//           </div>
+//         </div>
+//       </div>
+//       {/* this is three */}
+//       <div className="w-full flex flex-col md:w-1/2">
+//         <div
+//           className="h-[351px] md:h-[472px] lg:h-[581px]  bg-cover w-full"
+//           style={{
+//             backgroundImage: `url(${SilverSUiteimg})`,
+//             backgroundRepeat: "no-repeat",
+//           }}
+//         >
+//           <div className="font text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-2xl font-bold inline-block bg-[#484C7F] p-4">
+//             SALE 30%
+//           </div>
+//         </div>
+//         <div className="w-full bg-[#484C7F] bg-opacity-[5%]">
+//           <div className=" p-3">
+//             <h3 className=" font-semibold text-[#AC8DAF] text-[24px] sm:text-[30px] md:text-[38px] lg:text-4xl">
+//               GOLDEN SUITE
+//             </h3>
+//             <p className="text-2xl my-2 font-bold text-[#484C7F]">
+//               5,000 <span className="text-sm font-normal">naira</span>
+//             </p>
+//             <p className="text-sm text-[#484C7FBD]">per night</p>
+//           </div>
+//         </div>
+//       </div>
+//       </div>
+//       <div className="w-full">
+//         <div className="flex p-4 gap-5 items-end justify-center">
+//           <button className="w-8 h-8 sm:w-9 sm:h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 flex items-center justify-center bg-[#484C7F] text-white rounded-full">
+//             <FaArrowLeft />
+//           </button>
+//           <button className="w-8 h-8 sm:w-9 sm:h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 flex items-center justify-center bg-[#484C7F] text-white rounded-full">
+//             <FaArrowRight />
+//           </button>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Kingsutuies from "../../assets/Kingsutuies.png";
+import SilverSUiteimg from "../../assets/silversuiteimg.png";
+import specialimg from "../../assets/specialimg.png";
+
+// Carousel items data
+const carouselItems = [
+  { id: 1, image: Kingsutuies, title: "GOLDEN SUITE", price: "5,000" },
+  { id: 2, image: specialimg, title: "SPECIAL SUITE", price: "4,500" },
+  { id: 3, image: SilverSUiteimg, title: "SILVER SUITE", price: "3,500" },
+];
 
 export default function HotDeals() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const deals = [
-    {
-      title: "GOLDEN SUITE",
-      price: "5,000",
-      sale: "30%",
-      image: "golden-suite.jpg", // Replace with actual image paths
-    },
-    {
-      title: "SILVER SUITE",
-      price: "3,500",
-      sale: "30%",
-      image: "silver-suite.jpg",
-    },
-    {
-      title: "PLATINUM SUITE",
-      price: "7,000",
-      sale: "30%",
-      image: "platinum-suite.jpg",
-    },
-  ];
-
+  // Move to the previous item
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? deals.length - 1 : prevIndex - 1
-    );
+    if (currentIndex > 0) {
+      setCurrentIndex((prevIndex) => prevIndex - 1);
+    }
   };
 
+  // Move to the next item
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === deals.length - 1 ? 0 : prevIndex + 1
-    );
+    if (currentIndex < carouselItems.length - 1) {
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+    }
   };
 
   return (
-    <div className="bg-[#f9f2f5] py-10 px-5">
-      {/* Title Section */}
-      <div className="text-center mb-8">
-        <h2 className="text-[#4B2A63] text-2xl font-bold mb-2">Hot Deals</h2>
-        <div className="w-16 h-[3px] bg-[#4B2A63] mx-auto"></div>
-      </div>
+    <section className="relative w-full">
+      <h2 className="text-2xl font-semibold text-[#484C7F] mb-6">
+        Hot Deals <span className="border-b-4 border-[#AC8DAF]"></span>
+      </h2>
 
-      {/* Carousel */}
-      <div className="relative max-w-4xl mx-auto">
-        <div className="overflow-hidden">
-          {/* Slide */}
-          {deals.map((deal, index) => (
+      {/* Carousel Wrapper */}
+      <div className="flex justify-center items-center relative overflow-hidden">
+        {carouselItems.map((item, index) => {
+          // Determine whether the current item is the center, left, or right
+          const isCenter = index === currentIndex;
+          const isLeft = index === currentIndex - 1;
+          const isRight = index === currentIndex + 1;
+
+          return (
             <div
-              key={index}
-              className={`transition-transform duration-500 ${
-                index === currentIndex ? "translate-x-0" : "translate-x-full"
+              key={item.id}
+              className={`transition-transform w-full duration-500 ease-in-out transform ${
+                isCenter
+                  ? "scale-100 opacity-100 z-10" // Center item (active)
+                  : "scale-75 opacity-50 z-0" // Non-center items (inactive)
               }`}
+              style={{
+                transform: isCenter
+                  ? "translateX(0)"
+                  : isLeft
+                  ? "translateX(-200px)"
+                  : isRight
+                  ? "translateX(200px)"
+                  : "translateX(100%)", // Hidden items off-screen
+              }}
             >
-              <div className="p-5 bg-white rounded-lg shadow-lg text-center">
-                {/* Sale Badge */}
-                <span className="absolute top-5 left-5 bg-[#4B2A63] text-white text-sm px-3 py-1 rounded">
-                  SALE {deal.sale}
-                </span>
+              {/* Image Section */}
+              <div
+                className="bg-cover bg-center h-[351px] md:h-[472px] lg:h-[581px] w-full"
+                style={{
+                  backgroundImage: `url(${item.image})`,
+                }}
+              >
+                <div className="font text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-2xl font-bold inline-block bg-[#484C7F] p-4">
+                  SALE 30%
+                </div>
+              </div>
 
-                {/* Image */}
-                <img
-                  src={deal.image}
-                  alt={deal.title}
-                  className="rounded-lg w-full h-64 object-cover"
-                />
-
-                {/* Title */}
-                <h3 className="text-[#4B2A63] font-semibold text-lg mt-4">
-                  {deal.title}
+              {/* Text Section */}
+              <div className="w-full bg-[#484C7F] bg-opacity-[5%] p-3 text-center">
+                <h3 className="font-semibold text-[#AC8DAF] text-[24px] sm:text-[30px] md:text-[38px] lg:text-4xl">
+                  {item.title}
                 </h3>
-
-                {/* Price */}
-                <p className="text-[#4B2A63] text-lg font-bold">
-                  {deal.price} naira
+                <p className="text-2xl my-2 font-bold text-[#484C7F]">
+                  {item.price}{" "}
+                  <span className="text-sm font-normal">naira</span>
                 </p>
-                <p className="text-[#4B2A63] text-sm">per night</p>
+                <p className="text-sm text-[#484C7FBD]">per night</p>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Navigation Buttons */}
-        <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-5">
-          <button
-            onClick={handlePrev}
-            className="bg-[#4B2A63] text-white p-2 rounded-full"
-          >
-            <FaArrowLeft />
-          </button>
-          <button
-            onClick={handleNext}
-            className="bg-[#4B2A63] text-white p-2 rounded-full"
-          >
-            <FaArrowRight />
-          </button>
-        </div>
+          );
+        })}
       </div>
-    </div>
+
+      {/* Navigation Buttons (Arrows) */}
+      <div className="flex justify-center gap-4 mt-6  bottom-4 w-full">
+        <button
+          onClick={handlePrev}
+          className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 flex items-center justify-center bg-[#484C7F] text-white rounded-full hover:scale-110"
+        >
+          <FaArrowLeft />
+        </button>
+        <button
+          onClick={handleNext}
+          className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 flex items-center justify-center bg-[#484C7F] text-white rounded-full hover:scale-110"
+        >
+          <FaArrowRight />
+        </button>
+      </div>
+    </section>
   );
 }
