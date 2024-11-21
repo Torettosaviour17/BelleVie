@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import Kingsutuies from "../../assets/Kingsutuies.png";
-import SilverSUiteimg from "../../assets/silversuiteimg.png";
-import specialimg from "../../assets/specialimg.png";
+import Kingsutuies from "../../../public/assets/Kingsutuies.png";
+import SilverSUiteimg from "../../../public/assets/Silversuiteimg.png";
+import specialimg from "../../../public/assets/specialimg.png";
 
 // Carousel items data
 const carouselItems = [

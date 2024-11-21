@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import ourserviceimg from "../../assets/ourserviceimg.png";
-import Restaurantimg from "../../assets/Restaurantimg.png";
-import Gymnasiumimg from "../../assets/Gymnasiumimg.png";
-import aboutimg from "../../assets/aboutimg.png";
+import ourserviceimg from "../../../public/assets/ourserviceimg.png";
+import Restaurantimg from "../../../public/assets/Restaurantimg.png";
+import Gymnasiumimg from "../../../public/assets/Gymnasiumimg.png";
+import aboutimg from "../../../public/assets/aboutimg.png";
 
 export default function OurService() {
   const [activeTab, setActiveTab] = useState("Massage");

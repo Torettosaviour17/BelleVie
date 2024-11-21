@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/BelleView.png";
+import logo from "../../../public/assets/BelleView.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

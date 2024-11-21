@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import spaimg from "../../assets/spaimg.png";
-import faciliteshero from "../../assets/faciliteshero.png";
+import spaimg from "../../../public/assets/spaimg.png";
+import faciliteshero from "../../../public/assets/faciliteshero.png";
 
 export default function Spa() {
   return (

@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import faciliteshero from "../../assets/faciliteshero.png";
+import faciliteshero from "../../../public/assets/faciliteshero.png";
 
 export default function HeroFacilites() {
   return (

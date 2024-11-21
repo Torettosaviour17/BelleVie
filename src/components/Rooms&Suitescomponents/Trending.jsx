@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Kingsutuies from "../../assets/Kingsutuies.png";
+import Kingsutuies from "../../../public/assets/Kingsutuies.png";
 import { FaArrowRight } from "react-icons/fa";
-import specialimg from "../../assets/specialimg.png";
-import SilverSUiteimg from "../../assets/silversuiteimg.png";
-import ROyalSUiteimg from "../../assets/Royalsuiteimg.png";
+import specialimg from "../../../public/assets/specialimg.png";
+import SilverSUiteimg from "../../../public/assets/Silversuiteimg.png";
+import ROyalSUiteimg from "../../../public/assets/royalsuiteimg.png";
 
 export default function Trending() {
   return (

@@ -1,4 +1,4 @@
-import customerimg from "../../assets/customerimg.png";
+import customerimg from "../../../public/assets/customerimg.png";
 
 export default function CustomerStories() {
   return (
@@ -21,11 +21,7 @@ export default function CustomerStories() {
             </p>
           </div>
           <div className="absolute top-[9px] right-48">
-            <img
-              className="object-cover"
-              src={customerimg}
-              alt="Customer"
-            />
+            <img className="object-cover" src={customerimg} alt="Customer" />
           </div>
         </div>
       </div>

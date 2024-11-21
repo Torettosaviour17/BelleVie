@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import componentImg from "../../assets/Componentimg.png";
+import componentImg from "../../../public/assets/Componentimg.png";
 
 export default function heroContact() {
   return (

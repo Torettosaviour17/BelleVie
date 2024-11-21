@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import component from "../../assets/Componentimg.png";
-import comforableimg from "../../assets/comforableimg.png";
+import component from "../../../public/assets/Componentimg.png";
+import comforableimg from "../../../public/assets/comforableimg.png";
 
 export default function comforablesuties() {
   return (

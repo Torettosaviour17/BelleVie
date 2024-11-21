@@ -1,7 +1,5 @@
-// import React from "react";
-// import heroimg from "../../assets/heroimg.png";
-import heroImg from "../../assets/heroimg.png";
-import component from "../../assets/Componentimg.png";
+import heroImg from "../../../public/assets/heroimg.png";
+import component from "../../../public/assets/Componentimg.png";
 
 export default function HeroSection() {
   return (

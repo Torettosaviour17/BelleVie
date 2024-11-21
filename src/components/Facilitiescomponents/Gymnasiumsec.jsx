@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Gymnasiumimg from "../../assets/Gymnasiumimg.png";
-import faciliteshero from "../../assets/faciliteshero.png";
+import Gymnasiumimg from "../../../public/assets/Gymnasiumimg.png";
+import faciliteshero from "../../../public/assets/faciliteshero.png";
 
 export default function Gymnasiumsec() {
   return (

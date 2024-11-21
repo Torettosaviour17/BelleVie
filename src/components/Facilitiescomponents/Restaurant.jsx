@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Restaurantimg from "../../assets/Restaurantimg.png";
-import component from "../../assets/Componentimg.png";
+import Restaurantimg from "../../../public/assets/Restaurantimg.png";
+import component from "../../../public/assets/Componentimg.png";
 
 export default function Restaurant() {
   return (
