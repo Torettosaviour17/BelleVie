@@ -1,5 +1,6 @@
 // import React from "react";
-import heroimg from "../../assets/heroimg.png";
+// import heroimg from "../../assets/heroimg.png";
+import heroImg from "../../assets/heroimg.png";
 import component from "../../assets/componentimg.png";
 
 export default function HeroSection() {
@@ -32,7 +33,7 @@ export default function HeroSection() {
 
       {/* Hero Image */}
       <div className="w-full md:w-1/2 flex justify-center">
-        <img className="w-full h-auto" src={heroimg} alt="Hero" />
+        <img className="w-full h-auto" src={heroImg} alt="Hero" />
       </div>
     </section>
   );
