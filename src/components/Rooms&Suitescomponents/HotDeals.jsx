@@ -31,12 +31,13 @@ export default function HotDeals() {
 
   return (
     <section className="relative w-full">
-      <h2 className="text-2xl font-semibold text-[#484C7F] mb-6">
-        Hot Deals <span className="border-b-4 border-[#AC8DAF]"></span>
+      <h2 className="text-[#484C7F] pb-12 text-[36px] font-semibold p-7">
+        Hot Deals{" "}
+        <hr className="bg-[#AC8DAF] inline-block rounded-[20px] w-[74px] h-[10px]" />
       </h2>
 
       {/* Carousel Wrapper */}
-      <div className="flex justify-center items-center relative overflow-hidden">
+      <div className="flex justify-center items-center ">
         {carouselItems.map((item, index) => {
           // Determine whether the current item is the center, left, or right
           const isCenter = index === currentIndex;
@@ -55,10 +56,10 @@ export default function HotDeals() {
                 transform: isCenter
                   ? "translateX(0)"
                   : isLeft
-                  ? "translateX(-200px)"
+                  ? "translateX(100px)"
                   : isRight
-                  ? "translateX(200px)"
-                  : "translateX(100%)", // Hidden items off-screen
+                  ? "translateX(100px)"
+                  : "translateX(50%)", // Hidden items off-screen
               }}
             >
               {/* Image Section */}

@@ -1,5 +1,7 @@
 // import React from "react";
 import aboutimg from "../../../public/assets/aboutimg.png";
+import { Link } from "react-router-dom";
+
 
 export default function aboutus() {
   return (
@@ -9,7 +11,7 @@ export default function aboutus() {
           <img className="w-full h-auto" src={aboutimg} alt="Hero" />
         </div>
 
-        <div className="w-full md:w-1/2 flex flex-col justify-center gap-4 md:pr-28 ">
+        <div className="w-full md:w-1/2 flex flex-col justify-center gap-4 md:pr-20 md:pb-48">
           <h1 className="font-bold text-[42px] sm:text-[52px] lg:text-[100px]  text-transparent bg-clip-text bg-gradient-to-r from-[#484C7F] to-[#DDB6C6]">
             About Us
             <hr className="bg-[#484C7F] inline-block rounded-[20px] w-[74px] h-[10px]" />
@@ -24,7 +26,7 @@ export default function aboutus() {
           </p>
           {/* Button */}
           <button className=" bg-[#484C7F] text-white rounded-[10px] w-[40%] inline py-2 sm:text-[14px] text-[12px] md:text-[16px] font-semibold transition-all duration-300">
-            Contact us
+            <Link to={"/ContactUs"}>Contact us</Link>
           </button>
         </div>
       </section>

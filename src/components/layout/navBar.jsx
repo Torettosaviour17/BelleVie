@@ -15,7 +15,7 @@ export default function Navbar() {
       {/* Logo Section */}
       <div>
         <img
-          className="scale-50 sm:scale-75 md:scale-90 lg:scale-100 xl:scale-auto"
+          className="scale-75 sm:scale-90 md:scale-100 lg:scale-125 xl:scale-auto"
           src={logo}
           alt="Logo"
         />

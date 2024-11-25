@@ -21,8 +21,8 @@ export default function Spa() {
         </div>
 
         {/* Content Area */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center gap-4">
-          <h1 className="font-bold text-[42px] sm:text-[52px] lg:text-[100px] text-[#484C7FBD] leading-[1]">
+        <div className="w-full md:w-1/2 flex md:pb-48 flex-col justify-center gap-4">
+          <h1 className="font-bold text-[42px] sm:text-[52px] lg:text-[100px] text-[#484C7FBD] leading-[1] ">
             Spa
             <hr className="bg-[#DDB6C6] inline rounded-[20px] px-9 text-[14px]" />
           </h1>

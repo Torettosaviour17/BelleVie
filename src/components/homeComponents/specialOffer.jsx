@@ -1,12 +1,13 @@
 // import React from 'react'
-import specialimg from "../../assets/specialimg.png";
+import specialimg from "../../../public/assets/specialimg.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function specialOffer() {
   return (
     <div>
       <section className="flex flex-col md:flex-row gap-10 p-8 items-center w-full md:pl-14">
-        <div className="w-full md:w-1/2 flex flex-col gap-4">
+        <div className="w-full md:w-1/2 flex flex-col gap-4 md:pb-48">
           <div>
             <h1 className="font-bold text-[42px] sm:text-[52px] lg:text-[100px] text-[#AC8DAF] ">
               Special
@@ -24,7 +25,7 @@ export default function specialOffer() {
           </p>
           {/* Button */}
           <button className="w-[30%] inline py-2 bg-[#484C7F] text-white rounded-[10px] sm:text-[14px] text-[12px] md:text-[16px] font-semibold transition-all duration-300">
-            CHECK ALL NOW
+            <Link to={"/RoomsSuites"}>CHECK ALL NOW</Link>
           </button>
         </div>
         <div className="w-full flex flex-col md:w-1/2">

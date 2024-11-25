@@ -1,8 +1,17 @@
 import customerimg from "../../../public/assets/customerimg.png";
+import component from "../../../public/assets/Componentimg.png";
 
 export default function CustomerStories() {
   return (
-    <section className="bg-pink-50 items-center py-12 h-[100vh] flex ">
+    <section
+      className="bg-pink-50  py-12 h-[100vh] flex "
+      style={{
+        backgroundImage: `url(${component})`,
+        backgroundSize: "138px 319px", // Controls background image size
+        backgroundPosition: "0px 387px", // Positions background on the left side
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="  relative w-full">
         <div className=" w-[65%] p-7 bg-[#484C7FBD] rounded-tr-[20px] rounded-br-[20px]">
           <div className="">
