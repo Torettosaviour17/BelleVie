@@ -1,4 +1,3 @@
-
 export default function HeroSection() {
   return (
     <section
@@ -29,7 +28,7 @@ export default function HeroSection() {
 
       {/* Hero Image */}
       <div className="w-full md:w-1/2 flex justify-center">
-        <img className="w-full h-auto" src="/assets/heroImg.png" alt="Hero" />
+        <img className="w-full h-auto" src="/assets/heroimg.png" alt="Hero" />
       </div>
     </section>
   );
