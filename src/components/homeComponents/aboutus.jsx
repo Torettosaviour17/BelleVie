@@ -1,14 +1,15 @@
-// import React from "react";
-import aboutimg from "../../../public/assets/aboutimg.png";
 import { Link } from "react-router-dom";
-
 
 export default function aboutus() {
   return (
     <div>
       <section className="flex flex-col md:flex-row items-center justify-center bg-[#DDB6C6] bg-opacity-[20%] md:pl-0 p-7 gap-10">
         <div className="w-full md:w-1/2 flex justify-center">
-          <img className="w-full h-auto" src={aboutimg} alt="Hero" />
+          <img
+            className="w-full h-auto"
+            src="/assets/aboutimg.png"
+            alt="Hero"
+          />
         </div>
 
         <div className="w-full md:w-1/2 flex flex-col justify-center gap-4 md:pr-20 md:pb-48">

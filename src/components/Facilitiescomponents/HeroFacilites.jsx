@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import faciliteshero from "../../../public/assets/faciliteshero.png";
+// import faciliteshero from "../../../public/assets/faciliteshero.png";
 
 export default function HeroFacilites() {
   return (
@@ -23,7 +23,11 @@ export default function HeroFacilites() {
           </button>
         </div>
         <div className="flex justify-center">
-          <img className="w-full h-auto" src={faciliteshero} alt="Hero" />
+          <img
+            className="w-full h-auto"
+            src="/assets/faciliteshero.png"
+            alt="Hero"
+          />
         </div>
       </section>
     </div>

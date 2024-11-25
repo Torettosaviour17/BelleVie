@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import component from "../../../public/assets/Componentimg.png";
-import comforableimg from "../../../public/assets/comforableimg.png";
+// import component from "../../../public/assets/Componentimg.png";
+// import comforableimg from "../../../public/assets/comforableimg.png";
 
 export default function comforablesuties() {
   return (
@@ -9,7 +9,7 @@ export default function comforablesuties() {
       <section
         className="flex flex-col md:flex-row  justify-center md:pl-24 p-7 gap-10 pb-28"
         style={{
-          backgroundImage: `url(${component})`,
+          backgroundImage: `url("/assets/Componentimg.png")`,
           backgroundSize: "178px 409px", // Controls background image size
           backgroundPosition: "0px 400px", // Positions background on the left side
           backgroundRepeat: "no-repeat",
@@ -33,7 +33,7 @@ export default function comforablesuties() {
 
         {/* Hero Image */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <img className="w-full h-auto" src={comforableimg} alt="Hero" />
+          <img className="w-full h-auto" src="/assets/comforableimg.png" alt="Hero" />
         </div>
       </section>
     </div>

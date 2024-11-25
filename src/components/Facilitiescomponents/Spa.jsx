@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import spaimg from "../../../public/assets/spaimg.png";
-import faciliteshero from "../../../public/assets/faciliteshero.png";
+// import spaimg from "../../../public/assets/spaimg.png";
+// import faciliteshero from "../../../public/assets/faciliteshero.png";
 
 export default function Spa() {
   return (
@@ -9,7 +9,7 @@ export default function Spa() {
       <section
         className="flex flex-col bg-[#DDB6C6] bg-opacity-[20%] md:flex-row items-center justify-center md:pl-20 p-7 gap-10 pb-28"
         style={{
-          backgroundImage: `url(${faciliteshero})`,
+          backgroundImage: `url(/assets/faciliteshero.png)`,
           backgroundSize: "138px 339px", // Controls background image size
           backgroundPosition: "1224px 450px", // Positions background on the left side
           backgroundRepeat: "no-repeat",
@@ -17,7 +17,7 @@ export default function Spa() {
       >
         {/* Hero Image */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <img className="w-full h-auto" src={spaimg} alt="Hero" />
+          <img className="w-full h-auto" src="/assets/spaimg.png" alt="Hero" />
         </div>
 
         {/* Content Area */}

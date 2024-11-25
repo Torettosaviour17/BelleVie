@@ -1,9 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import ourserviceimg from "../../../public/assets/ourserviceimg.png";
-import Restaurantimg from "../../../public/assets/Restaurantimg.png";
-import Gymnasiumimg from "../../../public/assets/Gymnasiumimg.png";
-import aboutimg from "../../../public/assets/aboutimg.png";
 
 export default function OurService() {
   const [activeTab, setActiveTab] = useState("Massage");
@@ -14,28 +10,28 @@ export default function OurService() {
       title: "Relax & Get Massaged",
       description:
         "BelleView offers the best spa services and great massages at our highly organized and worldclass Spa at very affordable rates. Our masseurs are professionals with several years of expertise.",
-      imgSrc: ourserviceimg,
+      imgSrc: "/assets/ourserviceimg.png",
     },
     {
       label: "Restaurant",
       title: "Dine in Style",
       description:
         "Experience gourmet dining at our luxurious restaurant with a range of delicious cuisines crafted by top chefs.",
-      imgSrc: Restaurantimg,
+      imgSrc: "/assets/Restaurantimg.png",
     },
     {
       label: "Swimming Pool",
       title: "Enjoy the Pool",
       description:
         "Dive into relaxation with our crystal clear swimming pool, open for all guests.",
-      imgSrc: aboutimg,
+      imgSrc: "/assets/aboutimg.png",
     },
     {
       label: "Gymnasium",
       title: "Stay Fit",
       description:
         "Our gym is fully equipped with modern fitness equipment for a complete workout experience.",
-      imgSrc: Gymnasiumimg,
+      imgSrc: "/assets/Gymnasiumimg.png",
     },
   ];
 

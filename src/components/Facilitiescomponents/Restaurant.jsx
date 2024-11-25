@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Restaurantimg from "../../../public/assets/Restaurantimg.png";
-import component from "../../../public/assets/Componentimg.png";
+// import Restaurantimg from "../../../public/assets/Restaurantimg.png";
+// import component from "../../../public/assets/Componentimg.png";
 
 export default function Restaurant() {
   return (
@@ -9,7 +9,7 @@ export default function Restaurant() {
       <section
         className="flex flex-col md:flex-row items-center justify-center md:pl-24 p-7 gap-10 pb-28"
         style={{
-          backgroundImage: `url(${component})`,
+          backgroundImage: `url(/assets/Componentimg.png)`,
           backgroundSize: "138px 339px", // Controls background image size
           backgroundPosition: "0px 367px", // Positions background on the left side
           backgroundRepeat: "no-repeat",
@@ -31,7 +31,11 @@ export default function Restaurant() {
 
         {/* Hero Image */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <img className="w-full h-auto" src={Restaurantimg} alt="Hero" />
+          <img
+            className="w-full h-auto"
+            src="/assets/Restaurantimg.png"
+            alt="Hero"
+          />
         </div>
       </section>
     </div>

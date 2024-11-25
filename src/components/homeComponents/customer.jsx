@@ -1,12 +1,9 @@
-import customerimg from "../../../public/assets/customerimg.png";
-import component from "../../../public/assets/Componentimg.png";
-
 export default function CustomerStories() {
   return (
     <section
       className="bg-pink-50  py-12 h-[100vh] flex "
       style={{
-        backgroundImage: `url(${component})`,
+        backgroundImage: `url(/assets/Componentimg.png)`,
         backgroundSize: "138px 319px", // Controls background image size
         backgroundPosition: "0px 387px", // Positions background on the left side
         backgroundRepeat: "no-repeat",
@@ -30,7 +27,7 @@ export default function CustomerStories() {
             </p>
           </div>
           <div className="absolute top-[9px] right-48">
-            <img className="object-cover" src={customerimg} alt="Customer" />
+            <img className="object-cover" src="/assets/customerimg.png" alt="Customer" />
           </div>
         </div>
       </div>

@@ -1,10 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Kingsutuies from "../../../public/assets/Kingsutuies.png";
 import { FaArrowRight } from "react-icons/fa";
-import specialimg from "../../../public/assets/specialimg.png";
-import SilverSUiteimg from "../../../public/assets/Silversuiteimg.png";
-import ROyalSUiteimg from "../../../public/assets/royalsuiteimg.png";
 
 export default function Trending() {
   return (
@@ -20,7 +16,7 @@ export default function Trending() {
           {/* one */}
           <div className="bg-[#484C7F] bg-opacity-[5%]">
             <div>
-              <img className="w-full" src={Kingsutuies} alt="" />
+              <img className="w-full" src="/assets/Kingsutuies.png" alt="" />
             </div>
             <div className="p-9 pt-3">
               <h3 className="text-[#484C7F] text-[36px] font-semibold">
@@ -48,7 +44,7 @@ export default function Trending() {
             <div>
               <img
                 className="rounded-[20px] w-full h-[543px]"
-                src={specialimg}
+                src="/assets/specialimg.png"
                 alt=""
               />
             </div>
@@ -74,7 +70,7 @@ export default function Trending() {
           {/* three */}
           <div className="bg-[#484C7F] bg-opacity-[5%]">
             <div>
-              <img className="w-full" src={SilverSUiteimg} alt="" />
+              <img className="w-full" src="/assets/SilverSUiteimg.png" alt="" />
             </div>
             <div className="p-9 pt-3">
               <h3 className="text-[#484C7F] text-[36px] font-semibold">
@@ -100,7 +96,7 @@ export default function Trending() {
           {/* four */}
           <div className="bg-[#484C7F] bg-opacity-[5%]">
             <div>
-              <img className="w-full" src={ROyalSUiteimg} alt="" />
+              <img className="w-full" src="/assets/royalSUiteimg.png" alt="" />
             </div>
             <div className="p-9 pt-3">
               <h3 className="text-[#484C7F] text-[36px] font-semibold">

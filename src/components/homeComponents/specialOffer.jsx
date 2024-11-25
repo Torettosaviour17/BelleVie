@@ -1,5 +1,4 @@
 // import React from 'react'
-import specialimg from "../../../public/assets/specialimg.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -32,7 +31,7 @@ export default function specialOffer() {
           <div
             className="h-[351px] md:h-[472px] lg:h-[581px]  bg-cover w-full"
             style={{
-              backgroundImage: `url(${specialimg})`,
+              backgroundImage: `url(/assets/specialimg.png)`,
               backgroundRepeat: "no-repeat",
             }}
           >

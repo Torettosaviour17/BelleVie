@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../../public/assets/BelleView.png";
+// import logo from "../../../public/assets/BelleView.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function Navbar() {
       <div>
         <img
           className="scale-75 sm:scale-90 md:scale-100 lg:scale-125 xl:scale-auto"
-          src={logo}
+          src="/assets/BelleView.png"
           alt="Logo"
         />
       </div>
@@ -24,25 +24,32 @@ export default function Navbar() {
       {/* Links for Desktop */}
       <div>
         <ul className="gap-7 hidden md:flex">
-          {["/", "/facilities", "/RoomsSuites", "/contactUs"].map((path, index) => {
-            const names = ["Home", "Facilities", "Rooms & Suites", "Contact Us"];
-            return (
-              <li key={index}>
-                <NavLink
-                  to={path}
-                  className={({ isActive }) =>
-                    `text-[18px] font-semibold ${
-                      isActive
-                        ? "text-[#484C7F] decoration-wavy"
-                        : "text-[#DDB6C6]"
-                    } hover:text-[#1034A6]`
-                  }
-                >
-                  {names[index]}
-                </NavLink>
-              </li>
-            );
-          })}
+          {["/", "/facilities", "/RoomsSuites", "/contactUs"].map(
+            (path, index) => {
+              const names = [
+                "Home",
+                "Facilities",
+                "Rooms & Suites",
+                "Contact Us",
+              ];
+              return (
+                <li key={index}>
+                  <NavLink
+                    to={path}
+                    className={({ isActive }) =>
+                      `text-[18px] font-semibold ${
+                        isActive
+                          ? "text-[#484C7F] decoration-wavy"
+                          : "text-[#DDB6C6]"
+                      } hover:text-[#1034A6]`
+                    }
+                  >
+                    {names[index]}
+                  </NavLink>
+                </li>
+              );
+            }
+          )}
         </ul>
       </div>
 
@@ -77,25 +84,32 @@ export default function Navbar() {
           isOpen ? "flex" : "hidden"
         } fixed inset-0 bg-white flex-col md:hidden items-center justify-center space-y-6 font-bold z-40`}
       >
-        {["/", "/facilities", "/RoomsSuites", "/contactUs"].map((path, index) => {
-          const names = ["Home", "Facilities", "Rooms & Suites", "Contact Us"];
-          return (
-            <NavLink
-              key={index}
-              to={path}
-              className={({ isActive }) =>
-                `text-[16px] font-semibold ${
-                  isActive
-                    ? "text-[#B4020A] decoration-wavy"
-                    : "text-[#1034A6]"
-                } hover:text-[#484C7F]`
-              }
-              onClick={() => setIsOpen(false)} // Close menu on click
-            >
-              {names[index]}
-            </NavLink>
-          );
-        })}
+        {["/", "/facilities", "/RoomsSuites", "/contactUs"].map(
+          (path, index) => {
+            const names = [
+              "Home",
+              "Facilities",
+              "Rooms & Suites",
+              "Contact Us",
+            ];
+            return (
+              <NavLink
+                key={index}
+                to={path}
+                className={({ isActive }) =>
+                  `text-[16px] font-semibold ${
+                    isActive
+                      ? "text-[#B4020A] decoration-wavy"
+                      : "text-[#1034A6]"
+                  } hover:text-[#484C7F]`
+                }
+                onClick={() => setIsOpen(false)} // Close menu on click
+              >
+                {names[index]}
+              </NavLink>
+            );
+          }
+        )}
       </div>
     </nav>
   );

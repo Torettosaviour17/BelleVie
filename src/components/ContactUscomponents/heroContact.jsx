@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import componentImg from "../../../public/assets/Componentimg.png";
 
 export default function heroContact() {
   return (
@@ -8,7 +7,7 @@ export default function heroContact() {
       <section
         className="font-Poppins md:h-[100vh] md:flex justify-center gap-9 items-center"
         style={{
-          backgroundImage: `url(${componentImg})`,
+          backgroundImage: `url("/assets/Componentimg.png")`,
           backgroundSize: "140px 345px", // Controls background image size
           backgroundPosition: "0px 367px", // Positions background on the left side
           backgroundRepeat: "no-repeat",

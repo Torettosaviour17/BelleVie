@@ -1,12 +1,10 @@
-import heroImg from "../../../public/assets/heroimg.png";
-import component from "../../../public/assets/Componentimg.png";
 
 export default function HeroSection() {
   return (
     <section
       className="flex flex-col md:flex-row items-center justify-center bg-[#DDB6C6] bg-opacity-[20%] md:pl-24 p-7 gap-10 pb-28"
       style={{
-        backgroundImage: `url(${component})`,
+        backgroundImage: `url("/assets/Componentimg.png")`,
         backgroundSize: "201px 422px", // Controls background image size
         backgroundPosition: "0px 520px", // Positions background on the left side
         backgroundRepeat: "no-repeat",
@@ -31,7 +29,7 @@ export default function HeroSection() {
 
       {/* Hero Image */}
       <div className="w-full md:w-1/2 flex justify-center">
-        <img className="w-full h-auto" src={heroImg} alt="Hero" />
+        <img className="w-full h-auto" src="/assets/heroImg.png" alt="Hero" />
       </div>
     </section>
   );

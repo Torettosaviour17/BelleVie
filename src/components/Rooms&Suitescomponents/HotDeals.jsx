@@ -1,15 +1,27 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import Kingsutuies from "../../../public/assets/Kingsutuies.png";
-import SilverSUiteimg from "../../../public/assets/Silversuiteimg.png";
-import specialimg from "../../../public/assets/specialimg.png";
 
 // Carousel items data
 const carouselItems = [
-  { id: 1, image: Kingsutuies, title: "GOLDEN SUITE", price: "5,000" },
-  { id: 2, image: specialimg, title: "SPECIAL SUITE", price: "4,500" },
-  { id: 3, image: SilverSUiteimg, title: "SILVER SUITE", price: "3,500" },
+  {
+    id: 1,
+    image: "/assets/Kingsutuies.png",
+    title: "GOLDEN SUITE",
+    price: "5,000",
+  },
+  {
+    id: 2,
+    image: "/assets/specialimg.png",
+    title: "SPECIAL SUITE",
+    price: "4,500",
+  },
+  {
+    id: 3,
+    image: "/assets/SilverSUiteimg.png",
+    title: "SILVER SUITE",
+    price: "3,500",
+  },
 ];
 
 export default function HotDeals() {
