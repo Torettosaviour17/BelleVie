@@ -11,9 +11,9 @@ export default function HeroSection() {
     >
       {/* Content Area */}
       <div className="w-full md:w-1/2 flex flex-col  md:text-left justify-center gap-4">
-        <h1 className="font-bold text-[42px] sm:text-[52px] lg:text-[100px] text-[#484C7F] hover:scale-100">
+        <h1 className="font-bold text-[42px] sm:text-[52px] lg:text-[100px] text-[#484C7F] hover:text-[#AC8DAF]">
           Welcome
-          <hr className="bg-[#AC8DAF] inline-block rounded-[20px] w-[74px] h-[10px]" />
+          <hr className="bg-[#AC8DAF] hover:bg-[#484C7F] inline-block rounded-[20px] w-[74px] h-[10px]" />
         </h1>
         <p className="md:text-[18px] font-semibold text-[#484C7FBD]">
           BelleView is the best choice for you and your loved ones to feel at
