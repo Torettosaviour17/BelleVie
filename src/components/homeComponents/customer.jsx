@@ -9,8 +9,8 @@ export default function CustomerStories() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="  relative w-full">
-        <div className=" w-[65%] p-7 bg-[#484C7FBD] rounded-tr-[20px] rounded-br-[20px]">
+      <div className="  md:relative w-full">
+        <div className=" md:w-[65%] p-7 bg-[#484C7FBD] md:rounded-tr-[20px] md:rounded-br-[20px]">
           <div className="">
             <h2 className="text-[32px] leading-[108px] sm:text-[42px] md:text-[58px] lg:text-[72px]  text-white font-bold">
               Customer <br /> <span className="text-[#DDB6C6]">Stories</span>{" "}
@@ -26,8 +26,8 @@ export default function CustomerStories() {
               Simmon Haruna
             </p>
           </div>
-          <div className="absolute top-[9px] right-48">
-            <img className="object-cover" src="/assets/customerimg.png" alt="Customer" />
+          <div className="md:absolute md:top-[9px] right-48">
+            <img className="object-cover  " src="/assets/customerimg.png" alt="Customer" />
           </div>
         </div>
       </div>
